@@ -17,13 +17,33 @@ The goal is to hide Moya behind stable app-facing types, so app modules do not d
 - `NetworkTimeoutConfiguration`
 - `NetworkError`
 
-## Local Pod
+## Installation
+
+Use the released tag:
+
+```ruby
+pod 'NetworkKit', :git => 'git@github.com:AidenL-Code/NetworkKit.git', :tag => '0.1.0'
+```
+
+If your network cannot access GitHub through SSH, use HTTPS:
+
+```ruby
+pod 'NetworkKit', :git => 'https://github.com/AidenL-Code/NetworkKit.git', :tag => '0.1.0'
+```
+
+During active development, you can temporarily depend on the main branch:
+
+```ruby
+pod 'NetworkKit', :git => 'git@github.com:AidenL-Code/NetworkKit.git', :branch => 'main'
+```
+
+Local development path:
 
 ```ruby
 pod 'NetworkKit', :path => './NetworkKit'
 ```
 
-For the current local example:
+The current Example app still uses the local pod path:
 
 ```ruby
 pod 'NetworkKit', :path => '..'
