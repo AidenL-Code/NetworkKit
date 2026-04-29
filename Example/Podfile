@@ -1,0 +1,12 @@
+platform :ios, '14.0'
+
+use_frameworks!
+
+target 'NetworkKitExample' do
+  pod 'NetworkKit', :path => '..'
+
+  target 'NetworkKitExampleTests' do
+    inherit! :search_paths
+  end
+end
+
